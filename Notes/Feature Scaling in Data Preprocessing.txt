@@ -1,0 +1,14 @@
+Feature Scaling in Data Preprocessing
+
+Feature scaling is important in preprocessing datasets for machine learning because it helps machine learning algorithms use
+distance-based calculations to make predictions. If features are not scaled properly, larger values can have a disproportionate
+affect on the results. Feature scaling can also help improve the convergence speed and performance of some optimization algorithms.
+It can also help in handling skewed data and outliers, which also can influence the model's behavior and end results.
+
+Feature scaling helps enhance the performance of machine learning models. Scaling the features helps make it easier for algorithms to
+find the optimal solution, as the different scales of the features do not influence the results. This is effective in algorithms like
+k-nearest neighbors, support vector machines, and neural networks.
+
+Skewed data and outliers help handle these cases by transforming the data into a standardized range, reducing the impact of extreme
+values and makes the model more robust. This makes it very beneficial for algorithms that assume a normal distribution and are sensitive
+to outliers, such as linear regression.

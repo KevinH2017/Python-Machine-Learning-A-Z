@@ -1,0 +1,26 @@
+The Machine Learning Process
+
+1.) Data Pre-Processing
+    - Import the data
+    - Clean the data
+    - Split into training and test sets
+
+2.) Modelling
+    - Build the model
+    - Train the model
+    - Make predictions
+
+3.) Evaluation
+    - Calculate performance metrics
+    - Make a verdict
+
+Training Set and Test Set
+
+Training and Test sets are data used to make models and determine their accuracy.
+
+Feature Scaling
+
+Feature Scaling are columns and processing them, there are 2 kinds Normalization and Standardization.
+Normalization is scaling the information in a column to be either 0 or 1.
+Standardization is scaling the information to be between -3 and 3
+

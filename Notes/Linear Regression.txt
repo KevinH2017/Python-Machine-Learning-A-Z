@@ -1,0 +1,9 @@
+Simpler Linear Regression
+
+Linear regression is a machine-learning algorithm that uses labelled datasets to map the data points with the 
+most optimized linear functions which can be used for predictions on new datasets. This is done only if there is a linear
+relationship between the input and output, as long as the output changes at a constant rate as the input changes.
+This is represented with a straight line known as the Best-Fit Line.
+
+Simple linear regression is used when you want to predict a target value (dependent variable) using only one input feature
+(independent variable) while assuming a straight-line relationship between the two.
