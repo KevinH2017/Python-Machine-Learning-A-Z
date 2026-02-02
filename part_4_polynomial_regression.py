@@ -46,10 +46,10 @@ plt.ylabel("Salary")
 X_flat = np.ravel(X)    # Flatten to one element array, fixes DeprecationWarning
 X_grid = np.arange(min(X_flat), max(X_flat), 0.1)
 X_grid = X_grid.reshape((len(X_grid), 1))
-plt.figure("Truth or Bluff (Polynomial Regression HD)")
+plt.figure("Truth or Bluff (Polynomial Regression) HD")
 plt.scatter(X, y, color="red")
 plt.plot(X_grid, lr_2.predict(pf.fit_transform(X_grid)), color="blue")
-plt.title("Truth or Bluff (Polynomial Regression HD)")
+plt.title("Truth or Bluff (Polynomial Regression) HD")
 plt.xlabel("Position level")
 plt.ylabel("Salary")
 
