@@ -7,3 +7,49 @@ This is represented with a straight line known as the Best-Fit Line.
 
 Simple linear regression is used when you want to predict a target value (dependent variable) using only one input feature
 (independent variable) while assuming a straight-line relationship between the two.
+
+Multiple linear regression uses more than one independent variable and one dependent variable. This allows us to find
+relationships between dependent variable and two or more independent variables. Basically how multiple features collectively
+affect the outcome. This can include all the variables or a select number of variables.
+
+Different kinds of multiple linear regression models:
+    - "All-in" - cases:
+        Used when you have prior knowledge to use all the variables or if you are required to use all the variables.
+        Used when you are preparing for backward elimination.
+
+    - Backward Elimination:
+        Step 1: Select a significance level to stay in the model
+        Step 2: Fit the full model with all possible predictors
+        Step 3: Consider the predictor with the highest P-value (prediction value)
+        Step 4: Remove the predictor
+        Step 5: Fit the model without this variable (predictor / highest P-value)
+            After step 5, go back to step 3 loop until the variable with the highest P-value is less than your significance level. Otherwise go to FIN
+        FIN: Your model is ready
+
+    - Forward Selection:
+        Step 1: Select a significance level to enter in the model
+        Step 2: Fit all simple regression models, select the one with the lowest P-value
+        Step 3: Keep this variable and fit all possible models with one extra predictor added to the one(s) you already have
+        Step 4: Consider the predictor with the lowest P-value.
+            If P-value is less than significance level go to step 3. Otherwise go to FIN
+        FIN: Your model is ready
+
+    - Bidirectional Elimination:
+        Step 1: Select a significance level to enter and to stay in the model
+        Step 2: Perform the next step of Forward Selection. P-value < SLENTER to enter
+        Step 3: Perform ALL the steps of Backward Elimination. Old variables must have P < SLSTAY to stay, then go to Step 2.
+        Step 4: No new variables can enter and no old variables can exit. Go to FIN.
+        FIN: Your model is ready
+
+    -  All Possible Models:
+        Step 1: Select a criterion of goodness of fit.
+        Step 2: Construct all possible regression models.
+        Step 3: Select the one with the best criterion.
+        FIN: Your model is ready
+            Example: 10 columns would mean 1,023 totel models
+
+Polynomial Regression
+
+Polynomial regression is a special type of multiple linear regression model that is used to form a non-linear relationship 
+between the value of x and the corresponding expected mean of y.
+
