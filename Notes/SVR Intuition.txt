@@ -1,0 +1,36 @@
+SVR Intuition / SVM (Support Vector Machine) Intuition 
+
+Support Vector Regression (SVR) Intuition is a model that predicts continuous values by fitting a function within a defined error margin.
+It handles both linear relationships and complex non-linear patterns in data.
+
+Features:
+    - Works well with high-dimensional data
+    - Uses linear and kernel-based transformations
+    - Controls model flexibility using regularization parameters
+    - Effective for real-world datasets with limited samples
+
+Linear SVR is used when the relationship between input features and the target variable is aproximately linear. It fits a straight regression
+function in the original feature space without transforming the data into higher dimensions. Linear SVR is computationally efficient,
+interpretable and suitable for datasets where features have a direct and proportional relationship with the output.
+
+Linear SVR is used when:
+    - Data shows a linear trend
+    - Large datasets with many features
+    - Interpretability is important
+
+Non-Linear SVR is used when the relationship between input and output is complex and cannot be captured by a straight line. It uses
+kernel functions to implicitly map data into higher-dimensional spaces where a linear relationship can be learned.
+Non-Linear SVR is used to model curved patterns and complex feature interactions commonly found in real-world data.
+
+Common Non-Linear Kernels:
+    - RBF (Gaussian) Kernel:
+        The RBF kernel is the most widely used non-linear kernel in SVR. It measures similiarity based on distance and allows the model to
+        create smooth, flexible regression curves. It is highly effective for capturing localized and non-linear patterns.
+    
+    - Polynomial Kernel:
+        The polynomial kernel models polynomial relationships between features and targets. It is useful when interactions between features
+        follow polynomial behaviors but can be become computationally expensive for higher degrees.
+
+    - Sigmoid Kernel:
+        The sigmoid kernel resembles neural network activation functions and is less commonly used in regression tasks due to stability issues.
+
