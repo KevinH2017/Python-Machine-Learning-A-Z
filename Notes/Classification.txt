@@ -1,0 +1,82 @@
+Classification
+
+Classification is a machine learning technique to identify the category of new observations based on
+training data. The goal is to assign each data point to a predefined class, such as spam vs non-spam
+or diseased vs healthy patients.
+
+There are 3 types of classification:
+    1. Binary Classification
+        The simplest type of classification. The goal of which is to sort the data into two distinct categories.
+        It works by looking at different features to decide which category the data point is put into.
+
+    2. Multiclass Classification
+        This sorts data into more than 2 categories. This model picks the one that best matches the input.
+
+    3. Multi-Label Classification
+        In this type of classification, a single piece of data can belong to multiple categories at once.
+        Unlike in multiclass classification, datapoints can belong to multiple classes.
+
+Classification works by training a model using a labeled dataset where each input is paired with its correct output label.
+The model learns patterns and relationships in the data, so it can later predict labels for new, unseen inputs.
+    1. Data Collection
+        Start with a dataset where each item is labeled with the correct class.
+    
+    2. Feature Extraction
+        The system identifies features like color, shape or texture that help distuingish one class from another. These
+        features are what the model uses ot make predictions.
+
+    3. Model Training
+        Classification algorithm using the labeled data to learn how to map the features to the correct class.
+        It looks for patterns and relationships in the data.
+
+    4. Model Evaluation
+        Once the model is trained, it is tested on new, unseen data to check how accurately it can classify the items.
+
+    5. Prediction
+        After being trained and evaluated, the model can be used to predict the class of new data based on the features
+        it has learned.
+
+    6. Model Evaluation
+        Evaluating a classification model is a key step in machine learning. It helps us check how well the model performs
+        and how good it is at handling new, unseen data. Depending on the problem and needs it can use different metrics
+        to measure its performance.
+
+If the quality metric is not satisfactory, the machine learning algorithm or hyperparameters can be ajusted and the model is
+retrained. This iterative process continues until a satisfactory performance is achieved.
+
+Classification Algorithms:
+
+    Linear Classifiers:
+        Linear classifier models create a linear decision boundary between classes. They are simple and computationally efficient.
+        Types:
+            Logistic Regression
+            Support Vector Machines having kernel = 'linear'
+            Single-layer Perceptron
+            Stochastic Gradient Descent (SGD) Classifier
+
+
+    Non-linear Classifiers:
+        Non-linear models create a non-linear decision boundary between classes. They can capture more complex relationships 
+        between input features and target variable.
+        Types:
+            K-Nearest Neighbours
+            Kernel SVM
+            Naive Bayes
+            Decision Tree Classification
+            Ensemble learning classifiers: 
+            Random Forests, 
+            AdaBoost, 
+            Bagging Classifier, 
+            Voting Classifier, 
+            Extra Trees Classifier
+            Multi-layer Artificial Neural Networks
+
+Examples of machine learning classification:
+    Email spam filtering
+    Credit risk assessment
+    Medical diagnosis
+    Image classification
+    Sentiment analysis
+    Fraud detection
+    Recommendation systems
+    
