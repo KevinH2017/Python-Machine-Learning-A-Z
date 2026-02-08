@@ -1,0 +1,35 @@
+R-Squared
+
+R-squared, also known as the coefficient of determination, is a statistical measure that represents the goodness of a fit of a regression model.
+The value of r-square lies between 0 and 1. When r-squared equals to 1, the model perfectly fits the data and there is no
+difference between the predicted value and the actual value. When r-squared equals to 0, the model does not predict any
+variability in the model and it does not learn any relationships between the dependent and independent variables.
+R-squared can be negative, this occurs when the line or curve does an awful job of fitting the data.
+
+R-squared is calculated using the steps:
+    1. Calculate the mean of the target / dependent variable.
+    2. Calculate the total sum of the squares by subtracting each observation from the mean, squaring it, and summing these square differences
+    across all values.
+    3. Estimate the model parameter values using a suitable regression model, such as Linear Regression or SVM Regressor.
+    4. Calculate the sum of squares due to regression. This is calculated by subtracting each predicted value from the mean, squaring the
+    differences and then summing them all up.
+    5. Calculate the sum of squares. It explains unaccounted variability in the dependent variable after predicting these values from an
+    independent variable in the model.
+
+Equations:
+    Total Sum of Squares (TSS) = Σ (yi - ȳ)²
+    Regression Sum of Squares (RSS) = Σ (ŷi - ȳ)²
+    Residual Sum of Squares (ESS) = Σ (yi - ŷi)²
+
+    R² = RSS / TSS = 1 - (ESS / TSS)
+
+Where:
+    - yi is the actual value
+    - ŷi is the predicted value
+    - ȳ is the mean of the actual values
+
+Limitations:
+    - The value of r-squared always increases or remains the same as new variables are added to the model, without detecting the
+    significance of the newly added variable. As a result, non-significant attributes can also be added to the model with an
+    increase in the r-square value.
+    - This is beacause r-squared does not take into account the number of predictors in the model.
