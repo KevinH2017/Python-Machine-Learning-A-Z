@@ -1,0 +1,35 @@
+Random Forest Intuition
+
+Random forest is a learning algorithm that uses many decision trees to make better predictions.
+Each tree looks at different random parts of the data and their results are combined by voting for classification
+or averaging for regression which makes it more accurate and reduce errors.
+
+Working of Random Forest Algorithm:
+    - Create many decision trees
+    - Pick random features
+    - Each tree makes a prediction
+    - Combine the predictions
+    - It works well because using random data and features for each tree helps avoid overfitting and makes the overall
+    model for accurate and trustworthy.
+
+Key Features:
+    - Handles missing data
+    - Shows feature importance
+    - Works well with big and complex datasets
+    - Used for different tasks
+
+Assumptions:
+    - Each tree makes its own predictions without relying on others
+    - Random parts of the data are used
+    - Enough data is needed to ensure the trees are different and learn unique patterns and variety
+    - Different predictions improve accuracy when combined, leading to a more accurate final result
+
+Advantages:
+    - Random forest provides very accurate predictions even with large datasets
+    - Random forest can handle missing data well without compromising accuracy
+    - It doesn't require normalization or standardization on the dataset
+    - When combining multiple trees it reduces the risk of overfitting the model
+
+Limitations:
+    - It can be computationally expensive especially with a large number of trees
+    - It's harder to interpret the model compared to simpler models like a single decision tree
