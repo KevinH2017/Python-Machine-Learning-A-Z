@@ -1,0 +1,19 @@
+Decision Tree Intuition
+
+A decision tree is a supervised learning algorithm used for both classification and regression tasks.
+It has a hierarchical tree structure which consists of a root node, internal nodes and leaf nodes.
+
+It works like a flowchart to help make decisions step by step:
+    - Internal nodes represent attrribute tests
+    = Branches represent attribute values
+    - Leaf nodes represent final decisions or predictions
+
+Decision trees are widely used for their interpretability, flexibility, and low preprocessing needs.
+
+Decision trees work by splitting a dataset based on feature values to create pure subsets of ideally all items in a group
+belonging to the same class. Each leaf node of the tree corresponds to a class label and the internal nodes are feature-based
+decision points.
+
+Within each subset in the graph, the average outcome of all values in the subset is calculated to make a prediction for 
+new data points that fall into that subset. If a data point does not meet a condition at an internal node, it will go down the
+branch until it reaches a leaf node where the prediction is made.
