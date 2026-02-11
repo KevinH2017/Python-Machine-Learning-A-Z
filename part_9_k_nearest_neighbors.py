@@ -57,7 +57,6 @@ plt.title('K-Nearest Neighbor (Training set)')
 plt.xlabel('Age')
 plt.ylabel('Estimated Salary')
 plt.legend()
-plt.legend()
 
 # Visualising the test set results
 plt.figure('K-Nearest Neighbor (Test set)')
