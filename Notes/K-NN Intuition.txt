@@ -1,0 +1,51 @@
+K-NN Intuition
+
+K-NN (K-Nearest Neighbor) is a machine learning algorithm used for classification but can also be used for regression tasks.
+It works by finding the "k" closest data points (neighbors) to a given input and makes a prediction based on the majority
+class (for classification) or the average value (for regression) of those neighbors.
+
+KNN makes no assumptions about the underlying dasta distribution it makes it a non-parametric and instance based learning method.
+
+KNN is also called a lazy learner algorithm bescause it does not learn from the training set immediately instead it stores the
+entire dataset and performs computations only at the time of classification / regression.
+
+Example:
+    - KNN assigns the category based on the majority of nearby points.
+    - One set of points represent category 1 and another set of points represent category 2.
+    - If a new data point checks it closest neighbors, it is assigned to the category that has the most neighbors in its vicinity.
+
+The "k" in K-Nearest Neighbor is just a number that tells the algorithm how many nearby points or neighbors to look at then it makes
+a decision. 
+The value of k is determined by:
+    - The value of k in KNN decides how many neighbors the algorithm looks at when making a prediction.
+    - Choosing the right k is important for good results
+    - If the data has lots of noise or outliers, using a larger k can make the predictions more stable.
+    - But if the k is too large the model may become too simple and miss important patterns in the data and this is called underfitting.
+    - So k should be picked carefully based on the data.
+
+Statistical Methods for Selecting k:
+    - Cross-Validation
+    - Elbow Method
+    - Odd Values for k
+
+Distance Metrics Used:
+    - Euclidean Distance
+    - Manhattan Distance
+    - Minkowski Distance
+
+Applications of KNN:
+    - Recommendation Systems
+    - Spam Detection
+    - Customer Segmentation
+    - Speech Recognition
+
+Advantages of KNN:
+    - Simple to use
+    - No training step
+    - Few parameters
+    - Versatile
+
+Disadvantages of KNN:
+    - Slow with large data
+    - Struggles with many features
+    - Can Overfit
