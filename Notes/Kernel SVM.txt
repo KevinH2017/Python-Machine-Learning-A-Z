@@ -1,0 +1,28 @@
+Kernel Support Vector Machine
+
+Kernel Function is a method used to take data as input and transform it into the required form of processing data. It computes how similar
+two points look after being projected into a higher feature space, without ever performing the projection.
+
+Kernels in SVM can be used to:
+    - Similarity Measurement
+        Kernels calculate how closely two data points are related in feature space.
+    - Dimensional Expansion
+        They map data into higher dimensions implicitly without expensive computation.
+    - Flexible Boundaries
+        They enable the model to draw curved or irregular separation lines.
+    - Efficient Computation
+        They avoid manually engineering additional feature columns.
+    - Inner Product Trick
+        Kernels compute complex feature relationships using simple mathematical shortcuts.
+
+Using Kernel Functions:
+    - Non-Linear Patterns
+        Many real-world problems cannot be separated with straight lines.
+    - Smooth Separation
+        Kernels allow boundaries that curve around data clusters.
+    - Reduced Feature Work
+        They eliminate manual creation of polynomial or cross terms.
+    - Improved Accuracy
+        Non-linear transformations capture deeper relationships.
+    - General Adaptability
+        Kernels make SVM work well across diverse data types.
