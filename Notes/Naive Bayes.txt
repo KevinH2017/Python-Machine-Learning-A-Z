@@ -1,0 +1,28 @@
+Naive Bayes
+
+Bayes' Theorem is a mathematical formula used to determine conditional probability of an event based on prior knowledge and
+new evidence. It adjusts probabilities when new information comes in and helps make better decisions in uncertain situations.
+
+Example:
+Guessing which pet is in a box, a cat or dog. Initially it is 50/50 but if we get a clue that the pet is quiet, we can apply
+the Bayes Theorem to better estimate the probability of it being a cat or dog.
+
+Formula:
+P(A|B) = (P(B|A) * P(A)) / P(B)
+
+Where:
+    - P(A|B) is the probability of event A occurring given that B is true (posterior probability).
+    - P(B|A) is the probability of event B occurring given that A is true (likelihood).
+    - P(A) is the probability of event A occurring (prior probability).
+    - P(B) is the probability of event B occurring (marginal likelihood).
+
+Naive bayes is a classification algorithm that predicts the category of a data point using probability.
+It assumes that all features are indpendent of each other. It performs well in many real-world applications,
+such as spam filtering, document categorisation, and sentiment analysis.
+
+The naive bayes classifier uses Bayes Theorem to classify data based on the probabilities of different classes
+given the features of the data. The classifier is a simple probabilistic classifier and it has very few number parameters
+which are used to build the ML models that can predict at a faster speed than other classification algorithms.
+It is a probabilistic classifier because it assumes that one feature in the model is independent of existence of
+another feature. Where each feature contributes to the prediction with no relation between each other.
+It is called "naive" because it assumes the presence of one feature does not affect other features.
