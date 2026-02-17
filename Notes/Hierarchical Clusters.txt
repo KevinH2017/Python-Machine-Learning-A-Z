@@ -1,0 +1,18 @@
+Hierarchical Clusters
+
+Hierarchical clutering is a method that groups data into a hierarchy of clusters based on similarity.
+Building a tree-like structure that helps visualize relationships and decide the optimal number of clusters.
+It does not require pre-selecting the number of clusters.
+Uses agglomerative or divisive approaches.
+Commonly applied in data exploration and pattern discovery.
+It is commonly used in pattern recognition, customer segmentation, and image grouping.
+
+There are 2 types of Hierarchical Clustering:
+    1. Agglomerative Clustering:
+        - Bottom up approach where it treats each data as a singleton cluster at the outset and then successively agglomerates pairs of
+        clusters until all clusters have been merged into a single cluster that contains all data.
+
+    2. Divisive Clustering:
+        - Top down approach which requires a method for splitting a cluster that contains the whole data and proceeds by splitting clusters
+        recursively until individual data have been split into singleton clusters.
+
