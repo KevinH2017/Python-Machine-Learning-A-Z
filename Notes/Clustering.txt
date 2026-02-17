@@ -1,0 +1,36 @@
+Clustering
+
+Clustering is an unsupervised learning technique that groups similar data points together into clusers based on
+their characteristics, without using any labeled data. The objective is to ensure that data points within the same
+cluster are more similar to each other than to those in different clusters, enabling the discovery of natural
+groupings and hidden patterns in complex datasets.
+The goal is to discover the natural grouping or structure in unlabeled data without predefined categories.
+How this is done is by assigning data points to clusters based on their similarity or distance measures.
+Similarity measures can include Euclidean distance, cosine similarity, or other metrics depending on data
+type and clustering method.
+The output is that each group is assigned a cluster ID, representing shared characteristics within the cluster.
+
+Types of Clustering:
+    Hard Clustering:
+        In hard clustering, each data point strictly belongs to exactly one cluster, no overlap allowed. This
+        approach assigns a clear membership, making it easier to interpret and use for definitive segmentation tasks.
+        Use Cases: 
+            Market segmentation, customer grouping, document clustering.
+        Limitations: 
+            Cannot represent ambiguity or overlap between groups; boundaries are crisp.
+
+    Soft Clustering:
+        Soft clustering assigns each data point a probability or degree of membership to multiple clusters simultaneously,
+        allowing data points to partially belong to several groups.
+        Use Cases:
+            Situations with overlapping class boundaries, fuzzy categories like customer personas or medical diagnosis.
+        Benefits:
+            Captures ambiguity in data, models gradual transitions between clusters.
+
+    K-Means Clustering:
+        K-Means Clustering groups similar data points into clusters without needing labeled data. It is used to uncover hidden patterns when the goal is to organize data based on similarity.
+        Advantages:
+            Helps identify natural groupings in unlabeled datasets
+            Works by grouping points based on distance to cluster centers
+            Commonly used in customer segmentation, image compression, and pattern discovery
+            Useful when you need structure from raw, unorganized data
