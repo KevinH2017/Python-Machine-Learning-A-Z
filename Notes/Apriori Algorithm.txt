@@ -1,0 +1,53 @@
+Apriori Algorithm
+
+Apriori algorithm is a method used in data analysis to find groups of items that often appear together in large sets of
+data. It helps to discover useful patterns or rules about how items are related which is particularly useful in markey
+basket analysis. 
+
+The Apriori algorithm works through a systemic process that involves several steps:
+    1. Identifying Frequent Item-Sets:
+        - The algorithm starts by looking through all the data to count how many times each single item appears.
+        These items are called 1-Item-Sets.
+        - Next it uses a rule called minimum support this is a number that tells us how often an item or group
+        of items need to appear to be important. If an item appears often enough meaning its count is above the
+        minimum support it is called a frequent Item-Set.
+
+    2. Creating Possible Item Group:
+        - After finding the single items that appear often enough (frequent 1-item groups) the algorithm combines
+        them to create pairs of items (2-item groups). Then it checks which pairs are frequent by seeing if the
+        appear enough times in the data.
+        - This process repeats step by step making groups of 3 times, then 4 items and so on. The algorithm stops
+        when it can't find any bigger groups that happen often enough.
+
+    3. Removing Infrequent Item Groups:
+        - The algorithm uses a rule to save time. If a group of items does not appear often enough then any larger
+        group that includes these items it will not appear often.
+        - The algorithm does not check those larger groups. This way it avoids wasting time looking at groups
+        that won't be important to make the whole process faster.
+
+    4. Generating Association Rules:
+        - The algorithm makes rules to show how the items are related.
+        - It checks these rules using support, confidence and lift to find the strongest ones.
+
+The key metrics of Apriori Algorithm are:
+    - Support:
+        This metric measures how frequently an item appears in the dataset relative to the total number of transactions.
+        A higher support indicates a more significant presence of the Item-Set in the dataset. It tells us how often
+        a particular item or combination of items appears in all the transactions.
+
+    - Confidence:
+        This assesses the likelihood that an item Y is purchased when item X is purchased. It provides insight into the
+        strength of the association between two items. Confidence tells us how often items go together.
+
+    - Lift:
+        Lift evaluates how much more likely two items are to be purchased together compared to being purchased independently.
+        A lift greater that 1 suggests a strong positive association. Lift also shows how strong the connection is between
+        items.
+
+Applications of Apriori Algorithm include:
+    - E-commerce
+    - Food Delivery
+    - Streaming services
+    - Financial services
+    - Travel & Hospitality
+    - Health & Fitness
