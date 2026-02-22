@@ -33,7 +33,7 @@ for i in range(0, len(dataset)):
 rules = apriori(transactions=transactions, min_support=0.003, min_confidence=0.2, min_lift=3, min_length=2, max_length=2)
 
 # Visualising the results
-# Displays the results from the apriori function
+# Displays the results from the apriori function as a list
 results = list(rules)
 print(results)
 
@@ -41,6 +41,6 @@ print(results)
 resultsinDataFrame = pd.DataFrame(inspect(results), columns=['Left Hand Side', 'Right Hand Side', 'Support', 'Confidence', 'Lift'])
 print(resultsinDataFrame)
 
-# Displays the results sorted by descending Lift
+# Displays the first 10 results sorted by descending lift
 desc_lift = resultsinDataFrame.nlargest(n=10, columns='Lift')
 print(desc_lift)
