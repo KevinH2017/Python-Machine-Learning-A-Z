@@ -1,0 +1,9 @@
+Upper Confidence Bound (UCB)
+
+Upper confidence bound is a family of algorithms in machine learning and statistics for solving the "multi-armed bandit" problem and also
+addressing the exploration-exploitation trade-off. Because in machine learning, it cannot choose to both explore and exploit at the same
+time. UCB selects actions by computing an upper confidence estimate for each action's potential reward, which helps balance exploration of
+uncertain options with exploitation of those known to perform well.
+
+UCB actions uses uncertainty in the action-reward estimates for balancing exploration and exploitation. Since there is inherent uncertainty
+in the accuracy of the action-reward estimates when using a sample set of rewards, UCB uses uncertainty in the estimates to drive exploration.
