@@ -1,0 +1,23 @@
+ECLAT (Equivalence Class Clustering and bottom-up Lattice Traversal)
+
+ECLAT (Equivalence Class Clustering and bottom-up Lattice Traversal) algorithm is used to find frequent items in
+a dataset. These itemsets are used to create association rules which help to identify patterns in data. It is an
+improved alternative to Apriori algorithm by providing better scalability and computational efficiency.
+
+ECLAT uses vertical formatting where each item is linked to a list of transaction IDs (TIDs). It uses a
+depth-first search (DFS) strategy which requires fewer scans and makes it faster and more memory-efficient for
+larger datasets.
+
+Advantages:
+    - Efficient in dense datasets, performing better than apriori in datasets with frequent co-occurrences.
+    - Memory efficient, using vertical representation reduces redundant scans.
+    - Fast itemset intersection, computing itemsets support via TID-set intersections is faster than scanning
+    transactions repeatedly.
+    - Better scalability, can handle larger datasets due to its depth-first search mechanism.
+
+Disadvantages:
+    - High memory requirement, the large TID sets can consume a lot of memory.
+    - Not suitable for sparse data, performance drops for sparse datasets where intersections result in small
+    itemsets.
+    - Sensitive to large transactions, if a transaction has too many items its corresponding TID-set intersections
+    can be expensive.
