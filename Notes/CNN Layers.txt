@@ -1,0 +1,46 @@
+Convolutional Neural Network (CNN) Layers
+
+CNNs are neural networks used in computer vision tasks. By processing data in a grid-like way, essentially
+images are captured using spatial relationships between pixels.
+CNNs automatically learn hierarchical features through convolution operations, from simple edges and textures
+to complex shapes and objects.
+They also detect objects at different positions within an image, ensuring robustness to spatial variations.
+CNNs also reduce computational complexity by processing local regions instead of the entire image at once.
+
+Key Components:
+1. Input Layer:
+    - Receives the input data and passes it to the network for processing. Inputs are generally a 3D volume
+    (width x height x depth).
+    - Stores pixel values of the image.
+    - Preserves the spatial structure of the image for further processing.
+
+2. Convolutional Layer:
+    - Extracts important information from the input. Applies learnable filters that process the image and computes
+    the information between the filter weights and image patches, creating feature maps.
+    - Uses small filters to scan the input image.
+    - Generates feature maps that capture patterns such as edges, textures, and shapes.
+
+3. Activation Layer:
+    - Introduces non-linearity to the model by applying an element-wise activation function to the output of the
+    convolutional layer. This enables the model to learn complex patterns beyond linear relationships.
+    - Common functions include ReLU, Tanh, and Leaky ReLU.
+    - Applied element-wise to the feature maps.
+    - The output dimensions do not change.
+
+4. Pooling Layer:
+    - Reduces the spatial dimensions of the feature maps, making the model fater, reducing memory usage and helps
+    prevent overfitting. It is usually used between convolutional layers in CNN.
+    -  Common types include Max Pooling and Average Pooling.
+    - Reduces width and height while keeping depth the same.
+
+5. Flattening:
+    - Converts multi-dimensional feature maps into a one-dimensional vector. This vector is passed to the fully
+    connected layer for classification or regression.
+
+6. Fully Connected Layer:
+    - Performs high-level reasoning using extracted features and produces the final classification scores.
+
+7. Output Layer:
+    - Converts the final scores into probabilities using activation functions like Sigmoid (binary classification) or
+    Softmax (multi-class classification).
+    
