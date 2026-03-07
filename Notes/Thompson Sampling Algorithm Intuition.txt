@@ -1,0 +1,19 @@
+Thompson Sampling Algorithm Intuition
+
+Thompson Sampling, also known as Posterior Sampling or Probability Matching, is an algorithm that solves the exploration-exploitation
+dilemna in the "multi-armed bandit" problem. It does this by performing actions several times, called exploration. It then uses the
+training data that evaluates the actions taken rather than the instructions by giving correct correct actions. From this is what
+creates the need for active exploration, to create explicit trial-and-error search for a result. The results of those actions,
+either a reward or penality, for that action. The next actions are performed in order to maximize reward to improve future
+performance.
+
+Advantages of Thompson Sampling is that the search time decreases as more information is obtained, where we want as much information
+as possible in fewer searches. Thus this is more "search-oriented" with fewer data and less "search-oriented" when we have a lot of data.
+
+Thompson Sampling is probabilistic that uses prior knowledge to expect a reward from each action. While Upper Confidence Bound, UCB,
+balances exploration and exploitation by selecting actions with the highest upper confidence bound, the measure of how uncertain
+the expected reward estimate is for each action. Actions with high uncertainty are given higher priority to explore.
+
+UCB is deterministic and also requires an update at every round.
+Thompson Sampling is probablistic and can accommodate delayed feedback, making it much more flexible. It also has better empirical evidence.
+
