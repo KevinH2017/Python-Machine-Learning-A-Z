@@ -1,0 +1,27 @@
+Natural Language Processing (NLP)
+
+NLP is a combination of computer science, artifical intelligence, and language studies. It helps computers understand, process and
+create human language in a way that makes sense and is useful.
+It involves using computational techniques to analyze and understand human language, this can include language understanding,
+language generation, and language interaction.
+
+Types of NLP:
+    - Text Processing and Preprocessing
+    - Syntax and Parsing
+    - Semantic Analysis
+    - Information Extraction
+    - Text Classification in NLP
+    - Language Generation
+    - Speech Processing
+    - Question Answering
+    - Dialogue Systems
+    - Sentiment and Emotion Analysis in NLP
+
+Some examples include:
+    - If / Else Rules (Chatbot)
+    - Audio frequency components analysis (Speech Recognition)
+    - Bag-of-words model (Classification)
+    - Convolutional Neurl Network (CNN) for text Recognition (Classification)
+    - Seq2seq (Many applications)
+        - Neural network that is commonly used to map sequences of varying lengths such as converting a sentence in one language
+        to another or predicting a sequence of future events based on past data (time-series forecasting)
