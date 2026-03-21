@@ -1,0 +1,16 @@
+Artificial Neural Network (ANN)
+
+ANN are computer systems designed to mimic how the human brain processes information. Consisting of interconnected neurons
+to process data and make decisions. ANNs are used to analyze data, identify patterns and make predictions.
+These layers of interconnected neurons that work together to solve complex problems. The ANN "learns" from the data it
+processes, just like a human brain learns from experience.
+
+3 Key Components of ANN:
+1. Input Layer: This layer receives the initial data and passes it to the next layer for processing.
+2. Hidden Layer(s): These layers perform computations on the data received from the input layer. They extract features
+and patterns from the data. The number of hidden layers and neurons can vary based on the complexity of the problem.
+3. Output Layer: This layer produces the final output based on the computations performed by the hidden layers.
+
+By adjusting weights for the connections between input and hidden layers, the ANN can learn to make accurate predictions
+based on the data it processes. Over time, as more data is fed into the neural network, it improves its performance.
+
