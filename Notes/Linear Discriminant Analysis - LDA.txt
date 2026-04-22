@@ -1,0 +1,29 @@
+Linear Discriminant Analysis (LDA)
+
+Linear Discriminant Analysis (LDA), also known as Normal Discriminant Anaylsis", is a supervised classification
+problem that helps to separate two or more classes by converting higher-dimensional data space into a 
+lower-dimensional space. It is used to identify a linear combination of features that best separate classes
+within a dataset.
+
+Mainly used:
+    - As a dimensionality reduction technique
+        - Dimensionality reduction is reducing the number of features in a dataset while retaining key information
+        to help avoid slow computation and overfitting.
+    - In pre-processing for pattern classification.
+    - To project datasets onto a lower-dimensional space making it easier to visualize data and find patterns.
+        - This makes it easier to understand the features and classes in the dataset.
+
+Key Assumptions of LDA:
+    - Gaussian Distribution:
+        The data in each class should follow a normal bell-shaped distribution
+    - Equal Covariance Matrices:
+        All classes should have the same covariance structure.
+    - Linear Separability:
+        The data should be separable using a straight line or plane.
+
+LDA works by finding directions in the feature space that best separate each class. It does this by maximizing the
+difference between class means while minimizing the spread within each class.
+
+LDA is similar to PCA since both are linear transformation techniques for dimensional reduction. But PCA is unsupervised
+while LDA is supervised. LDA also maximizes the component axes for class-seperation while PCA uses compenent axes that
+maximize the variance in the dataset.
