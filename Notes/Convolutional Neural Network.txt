@@ -1,0 +1,44 @@
+Convolutional Neural Network (CNN)
+
+CNN are a type of neural network that are designed to process structured grid-like data like images by capturing
+the spatial relationships between pixels. This allows thme to automatically learn hierarchical features through
+convolutional operations, from simple edges and textures to complex shapes and objects. They also detect
+objects at different positions within an image, ensuring robustness to spatial variations. It also reduces
+computational complexity by processing local regions instead of the entire image at once.
+
+The key components of a CNN include:
+    1.) Input Layer:
+        - Receiving raw image data and passes it to the network for processing. 
+        - It stores the pixel values of the image
+        - Preserving the spatial structure of the image for further processing.
+    
+    2.) Convolutional Layer:
+        - Extracts important features from the input and applies a set of learnable filters / kernels that slide
+        over the image and compute the dot product between the filter weights and corresponding image patches,
+        this produces feature maps for the next layer.
+        - Uses smaller filters to scan the image.
+        - Generates feature maps that capture patterns such as edges, textures, and shapes.
+
+    3.) Activation Layer:
+        - Applies element-wise activation function to the output of the convolution layer, this allows the model
+        to learn complex patterns beyond linear relationships.
+        - Common activation functions include ReLU, Tanh, and leaky ReLU.
+        - Output dimensions remain unchanged.
+
+    4.) Pooling Layer:
+        - Reduces the spatial dimensions of the feature maps, making computations faster, reducing memory usage,
+        and helps to prevent overfitting. It is usually inserted between the convolutional layers in the CNN.
+        - Common types include Max Pooling and Average Pooling.
+        - Reduces width and height while keeping depth unchanged.
+
+    5.) Flattening:
+        - Converts the multi-dimensional feature maps into a one-dimensional vector after convolution and pooling.
+        Then this vector is passed to the fully connected layer for classification or regression.
+
+    6.) Fully Connected Layer:
+        - The fully connected (Dense) layer performs high-level reasoning using extracted features and produces the
+        final classification scores.
+
+    7.) Output Layer:
+        - The output layer converts final scores into probabilities using activation functions like Sigmoid for
+        binary or Softmax for multi-class classification.
