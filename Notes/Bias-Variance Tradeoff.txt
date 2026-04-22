@@ -1,0 +1,5 @@
+Bias-Variance Tradeoff
+
+Bias-Variance Tradeoff is the balance between a model being too simple and too complex. A simple model can miss important
+patterns, high bias, while a complex model can learn noise from the training data, high variance. The goal is to find
+the balance in both so that the model performs well on the data.
