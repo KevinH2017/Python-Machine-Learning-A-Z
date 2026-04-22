@@ -1,0 +1,24 @@
+K-Fold Cross Validation Technique
+
+K-Fold Validation is a technique used to measure the performance of a machine learning model by dividing
+the datasets into K subsets of equal sizes, called folds. The model is then trained on K - 1 folds and tested on the
+remaining fold. This is then repeated K times, with each fold being used as testing exactly once. Then the
+performance of the model is averaged over all K iterations to get an accurate estimate of the model's performance.
+
+Cross validation is used to:
+    - Avoid overfitting
+        - By ensuring that the model does not perform well only on the training data but also for unseen data.
+    - Provide robust evaluation
+        - This is done by averaging the results over multiple iterations, which reduces bias and variance in the
+        performance estimates.
+    - Efficiently use data
+        - Maximizes the utilization of the dataset, especially in small datasets.
+
+K-Fold Cross Validation Steps:
+    1. Split data into K folds, dividing the dataset into K subsets or folds.
+    2. Train-Test Iterations
+        - Where for each fold uses K - 1 folds for training the model
+        - And use the remaining fold to test the model and evaluate its performance.
+    3. Aggregate Results
+        - Calculate the performance of the fold and average the results of all iterations.
+        (ex: accuracy, precision, recall, etc.)
