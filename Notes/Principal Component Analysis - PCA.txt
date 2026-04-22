@@ -1,0 +1,34 @@
+Principal Component Analysis (PCA)
+
+Principal Component Analysis is a dimensionality reduction technique that helps reduce the number of features
+in a dataset while keeping the most important information. It changes complex datasets by transforming correlated
+features into a smaller set of uncorrelated components. It improves computational efficiency and makes data easier
+to visualize and analyze.
+
+It works by using linear algebra to transform data into new feautres called principal components. It does this by
+calculating eigenvectors (directions) and eigenvalues (importance) from the covariance matrix. A covariance matrix
+is a square matrix that shows how features in a dataset relate to each other. PCA selects the top components
+with the highest eigenvalues and projects the data onto them to simplify the dataset.
+
+Steps:
+    1.) Standardize the Data:
+        Different features can have different units and scales, so you must standardize the data by making each
+        number have a mean of 0 and a standard deviation of 1.
+
+    2.) Calculate Covariance matrix:
+        Calculate the covariance matrix to see how features relate to each other whether they increase or decrease
+        together.
+
+    3.) Find the Principal Components:
+        PCA identifies the new axes where the data spreads out the most.
+        1st Principal Component (PC1) - The direction of maximum variance (most spread).
+        2nd Principal Component (PC2) - The next best direction, perpendicular to PC1, and so on.
+        The directions come from the eigenvectors of the covariance matrix and their importance is 
+        measured by the eigenvalues.
+        This means that when A acts on X it only stretches or shrinks X by the scalar Alpha.
+        The direction of X remains unchanged hence eigenvectors define "stable directions" of A.
+
+    4.) Pick the Top Directions & Transform Data:
+        After the calculations of eigenvalues and eigenvectors PCA ranks them by amount of information they capture.
+        Then it selects the top k components that capture the most of the variance, such as 95%. Then it transforms
+        the orginal dataset by projecting it onto thses top components.
