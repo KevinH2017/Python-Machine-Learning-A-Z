@@ -1,0 +1,28 @@
+CatBoost (Categorical Boosting)
+
+CatBoost is a gradient-based model that is able to self-tune itself for maximum efficiency. It does this by using
+gradient boosting techniques where decision trees are build in sequential order to minimize errors and improve
+predictions. This is done by constructing decision trees and evaluating how much error there are in its predictions.
+Once the first tree is built, the next one is created to correct the errors made of the previous one. This continues
+with each tree improving the model's predictions by correcting errors from previous trees until a specified number
+of iterations is reached. The result of this is a group of decision trees that work together to make accurate
+predictions.
+
+CatBoost excels at large-scale datasets that have many independent features. It is specifically designed to handle
+both categorical and numerical features seamlessly without requiring manual feature encoding.
+
+CatBoost applications include:
+    - Sentiment analysis
+    - Email spam detection
+    - Breast cancer prediction
+
+Some regression tasks include:
+    - House price prediction
+    - Fuel consumption prediction
+    - Stock marked prediction
+
+Limitations include:
+    - Significant memory usage
+    - Computationally intensive training processes, leading to longer training times
+    - Limited built-in support for distribution training across multiple machines
+    - A smaller community leading to less detailed documentation
